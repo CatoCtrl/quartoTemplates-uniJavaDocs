@@ -2,21 +2,19 @@
 
 A professional Quarto template for PDF generation with custom formatting.
 
-## ✅ Verified Features
+## Features
 
-All features have been tested and verified to work correctly:
-
-- ✅ **Title Page**: Centered title on a dedicated first page
-- ✅ **Page Layout**: 
+- **Title Page**: Centered title on a dedicated first page
+- **Page Layout**: 
   - Left margin: 3cm
-  - Right blank space: 33% of page width
+  - Text width: 67% of page (leaving 33% blank space on the right)
   - Top/bottom margins: 2.5cm
-- ✅ **Page Numbers**: Centered at the bottom of each page
-- ✅ **Table of Contents**: Includes only level 1 and level 2 headings
-- ✅ **Line Spacing**: 2 points between lines throughout the document
-- ✅ **Code Blocks**: 
-  - Properly formatted with monospace font
-  - Respects left margin and right spacing
+- **Page Numbers**: Centered at the bottom of each page
+- **Table of Contents**: Includes only level 1 and level 2 headings
+- **Line Spacing**: 2-point line spacing throughout the document
+- **Code Blocks**: 
+  - Monospace font with proper formatting
+  - Respects margins and spacing constraints
   - Intelligent line breaking with hook arrow indicators (↪)
   - Auto-indents broken lines for readability
 
@@ -37,7 +35,7 @@ uniJavaDocs/
 
 1. Copy the template directory:
    ```bash
-   cp -r custom-pdf-template my-project
+   cp -r uniJavaDocs my-project
    cd my-project
    ```
 
@@ -57,27 +55,22 @@ uniJavaDocs/
 
 ### Option 2: Use with `quarto use template`
 
-- Local path:
+- **Local path**:
   ```bash
-  mkdir my-project && cd my-project
-quarto use template /absolute/path/to/uniJavaDocs
+  quarto use template /absolute/path/to/uniJavaDocs
   ```
 
-- GitHub (after you push this folder to a repo called `custom-pdf-template`):
+- **GitHub** (after pushing to a repository):
   ```bash
-  mkdir my-project && cd my-project
-quarto use template <your-github-username>/uniJavaDocs
+  quarto use template <your-github-username>/uniJavaDocs
   ```
 
-To push this folder to GitHub:
+**To publish on GitHub**:
 ```bash
-cd /home/cato/tmp/uniJavaDocs
-git init
-git add .
-git commit -m "Initial template"
-# Create an empty repo named custom-pdf-template on GitHub, then:
-git branch -M main
+cd /path/to/uniJavaDocs
+# Create an empty repo named uniJavaDocs on GitHub, then:
 git remote add origin git@github.com:<your-github-username>/uniJavaDocs.git
+git branch -M main
 git push -u origin main
 ```
 
@@ -126,20 +119,17 @@ Edit `header.tex` for advanced LaTeX customization.
 
 ## Testing
 
-The template has been tested with:
-- Title page generation
-- Table of contents (levels 1-2 only)
-- Long text paragraphs
-- Code blocks with very long lines
-- Page numbering
-- Custom margins and spacing
+Test the template by rendering the example:
+```bash
+quarto render template.qmd
+```
 
-Example test output verified:
-- Title page appears first (separate page)
-- TOC shows Level 1 and 2 headings (Level 3 excluded)
-- Code lines break with ↪ indicator
-- Page numbers appear at bottom center
-- Proper margins maintained throughout
+Verify the PDF output includes:
+- Separate title page
+- Table of contents with Level 1 and 2 headings only
+- Correct margins (3cm left, 33% blank space on right)
+- Page numbers at bottom center
+- Proper line spacing and code block formatting
 
 ## Requirements
 

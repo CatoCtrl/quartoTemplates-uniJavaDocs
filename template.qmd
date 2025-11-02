@@ -6,11 +6,11 @@ title: "Your Title Here"
 
 Write your content here. This template includes:
 
-- Custom page margins (left margin, 33% right blank)
+- Custom page margins (3cm left, 33% blank space on right)
 - 2-point line spacing
-- Table of contents for level 1-2 headings
-- Page numbers at bottom
-- Custom title page
+- Table of contents (level 1-2 headings only)
+- Page numbers at bottom center
+- Centered title page
 
 ## Example Section
 
