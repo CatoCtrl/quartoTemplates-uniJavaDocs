@@ -6,7 +6,7 @@ title: "Your Title Here"
 
 Write your content here. This template includes:
 
-- Custom page margins (3cm left, 33% blank space on right)
+- Custom page margins (3cm left, ~1/3 page blank on right — A4: 7cm)
 - 2-point line spacing
 - Table of contents (level 1-2 headings only)
 - Page numbers at bottom center

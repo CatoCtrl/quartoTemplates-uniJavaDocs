@@ -7,7 +7,7 @@ A professional Quarto template for PDF generation with custom formatting.
 - **Title Page**: Centered title on a dedicated first page
 - **Page Layout**: 
   - Left margin: 3cm
-  - Text width: 67% of page (leaving 33% blank space on the right)
+  - Right blank space: ~1/3 of page (A4: set right=7cm)
   - Top/bottom margins: 2.5cm
 - **Page Numbers**: Centered at the bottom of each page
 - **Table of Contents**: Includes only level 1 and level 2 headings
@@ -114,6 +114,7 @@ Edit `_quarto.yml` to customize:
 - **Line spacing**: Adjust `linestretch` value
 - **TOC depth**: Modify `toc-depth`
 - **Sections**: Toggle `number-sections`
+- **Paper size**: Uses A4 by default via `geometry: [a4paper]`; adjust `right` accordingly for other sizes (e.g., Letter ≈ 7.2cm)
 
 Edit `header.tex` for advanced LaTeX customization.
 
@@ -127,7 +128,7 @@ quarto render template.qmd
 Verify the PDF output includes:
 - Separate title page
 - Table of contents with Level 1 and 2 headings only
-- Correct margins (3cm left, 33% blank space on right)
+- Correct margins (3cm left, ~1/3 page blank on right; A4: 7cm right margin)
 - Page numbers at bottom center
 - Proper line spacing and code block formatting
 

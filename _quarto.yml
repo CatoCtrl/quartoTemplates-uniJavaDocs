@@ -5,6 +5,7 @@ format:
   pdf:
     documentclass: article
     geometry:
+      - a4paper
       - left=3cm
       - right=7cm
       - top=2.5cm
