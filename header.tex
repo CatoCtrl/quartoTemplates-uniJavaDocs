@@ -1,0 +1,54 @@
+% Custom title page
+\usepackage{titling}
+\pretitle{\begin{center}\Huge\bfseries}
+\posttitle{\par\end{center}\vskip 0.5em}
+\preauthor{}
+\postauthor{}
+\predate{}
+\postdate{}
+
+% Make title page centered vertically
+\makeatletter
+\renewcommand{\maketitle}{
+  \begin{titlepage}
+    \null
+    \vfill
+    \begin{center}
+      {\Huge\bfseries\@title\par}
+    \end{center}
+    \vfill
+    \null
+  \end{titlepage}
+}
+\makeatother
+
+% Page numbering in footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+% Code block formatting with proper line breaking
+\usepackage{listings}
+\lstset{
+  breaklines=true,
+  breakatwhitespace=true,
+  breakindent=0pt,
+  postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+  basicstyle=\ttfamily\small,
+  xleftmargin=2em,
+  xrightmargin=0em,
+  frame=none,
+  showstringspaces=false
+}
+
+% Ensure fancyvrb (used by Quarto) respects line breaking
+\usepackage{fvextra}
+\fvset{
+  breaklines=true,
+  breakanywhere=false,
+  breakautoindent=true,
+  breakindent=1em,
+  fontsize=\small
+}

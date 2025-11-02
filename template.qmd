@@ -1,0 +1,26 @@
+---
+title: "Your Title Here"
+---
+
+# Introduction
+
+Write your content here. This template includes:
+
+- Custom page margins (left margin, 33% right blank)
+- 2-point line spacing
+- Table of contents for level 1-2 headings
+- Page numbers at bottom
+- Custom title page
+
+## Example Section
+
+Your text will automatically have proper spacing and margins applied.
+
+## Code Example
+
+```python
+# Code blocks are formatted with proper margins and line breaking
+def example_function(param1, param2):
+    result = param1 + param2
+    return result
+```

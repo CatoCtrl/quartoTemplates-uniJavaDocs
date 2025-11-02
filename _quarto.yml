@@ -1,0 +1,17 @@
+project:
+  title: "{{< meta project.title >}}"
+
+format:
+  pdf:
+    documentclass: article
+    geometry:
+      - left=3cm
+      - right=33%
+      - top=2.5cm
+      - bottom=2.5cm
+    number-sections: false
+    toc: true
+    toc-depth: 2
+    linestretch: 2
+    include-in-header:
+      - header.tex

@@ -1,0 +1,9 @@
+title: uniJavaDocs
+description: A Quarto template for PDF documents with custom margins, line spacing, and code formatting
+author: Custom Template
+version: 1.0.0
+
+metadata:
+  title: "My Document"
+  project:
+    title: "My Project"
