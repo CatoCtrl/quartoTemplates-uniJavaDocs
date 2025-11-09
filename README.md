@@ -10,7 +10,7 @@ A professional Quarto template for PDF generation with custom formatting.
   - Right blank space: ~1/3 of page (A4: set right=7cm)
   - Top/bottom margins: 2.5cm
 - **Page Numbers**: Centered at the bottom of each page
-- **Table of Contents**: Includes only level 1 and level 2 headings
+- **Table of Contents**: Includes only level 1 headings
 - **Line Spacing**: 2-point line spacing throughout the document
 - **Code Blocks**: 
   - Monospace font with proper formatting
@@ -91,11 +91,11 @@ Your content here with automatic 2-point line spacing.
 
 ## Level 2 Heading
 
-This appears in the table of contents.
+This does NOT appear in the table of contents.
 
 ### Level 3 Heading
 
-This does NOT appear in the table of contents.
+This also does NOT appear in the table of contents.
 
 ## Code Example
 
@@ -127,7 +127,7 @@ quarto render template.qmd
 
 Verify the PDF output includes:
 - Separate title page
-- Table of contents with Level 1 and 2 headings only
+- Table of contents with Level 1 headings only
 - Correct margins (3cm left, ~1/3 page blank on right; A4: 7cm right margin)
 - Page numbers at bottom center
 - Proper line spacing and code block formatting

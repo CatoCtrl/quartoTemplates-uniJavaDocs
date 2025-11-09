@@ -12,7 +12,7 @@ format:
       - bottom=2.5cm
     number-sections: false
     toc: true
-    toc-depth: 2
+    toc-depth: 1
     linestretch: 2
     include-in-header:
       - header.tex
