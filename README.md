@@ -10,9 +10,13 @@ A professional Quarto template for PDF generation with custom formatting.
   - Right blank space: ~1/3 of page (A4: set right=7cm)
   - Top/bottom margins: 2.5cm
 - **Page Numbers**: Centered at the bottom of each page
-- **Table of Contents**: Includes only level 1 headings
+- **Table of Contents**: 
+  - Includes only level 1 headings
+  - Placed on a dedicated page
+  - Clickable links to sections
 - **Line Spacing**: 2-point line spacing throughout the document
 - **Code Blocks**: 
+  - Syntax highlighting (IDE-style)
   - Monospace font with proper formatting
   - Respects margins and spacing constraints
   - Intelligent line breaking with hook arrow indicators (↪)
@@ -113,6 +117,8 @@ Edit `_quarto.yml` to customize:
 - **Margins**: Change `geometry` settings
 - **Line spacing**: Adjust `linestretch` value
 - **TOC depth**: Modify `toc-depth`
+- **Syntax Highlighting**: Change `highlight-style` (e.g., `tango`, `github`, `atom-one`)
+- **Links**: Toggle `colorlinks`
 - **Sections**: Toggle `number-sections`
 - **Paper size**: Uses A4 by default via `geometry: [a4paper]`; adjust `right` accordingly for other sizes (e.g., Letter ≈ 7.2cm)
 

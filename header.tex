@@ -54,3 +54,7 @@
   breakindent=1em,
   fontsize=\small
 }
+
+% Force new page after Table of Contents
+\let\oldtableofcontents\tableofcontents
+\renewcommand{\tableofcontents}{\oldtableofcontents\newpage}
